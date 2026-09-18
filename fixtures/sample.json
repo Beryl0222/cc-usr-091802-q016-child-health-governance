@@ -1,0 +1,12 @@
+{
+  "service": "child-health-governance",
+  "context": {
+    "measurement_types": [
+      "height",
+      "weight",
+      "activity"
+    ],
+    "minimum_cohort": 50,
+    "diagnosis_allowed": false
+  }
+}
