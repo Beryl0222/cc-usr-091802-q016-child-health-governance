@@ -3,10 +3,31 @@
   "context": {
     "measurement_types": [
       "height",
-      "weight",
-      "activity"
+      "weight"
     ],
+    "supported_units": {
+      "height": ["cm", "m", "inch"],
+      "weight": ["kg", "g", "lb", "jin"]
+    },
+    "indicators": ["bmi"],
+    "age_bands": ["0-2", "3-5", "6-9", "10-12", "13-15", "16-17"],
+    "verdicts": ["within_range", "needs_attention", "insufficient_evidence"],
     "minimum_cohort": 50,
-    "diagnosis_allowed": false
+    "diagnosis_allowed": false,
+    "shaming_labels_allowed": false,
+    "paid_promotion_allowed": false,
+    "rule_approval_roles": ["medical", "privacy", "copy"],
+    "canary_requires_explicit_guardian_consent": true,
+    "backfill_window_hours": 720,
+    "height_weight_pair_gap_hours": 72
+  },
+  "example_submission": {
+    "note": "仅为字段示例，不对应任何真实儿童",
+    "person_id": "example-child",
+    "model_id": "watch-k1",
+    "readings": [
+      {"measurement": "height", "value": 167, "unit": "cm", "posture": "standing", "capture_mode": "manual"},
+      {"measurement": "weight", "value": 50.5, "unit": "kg", "posture": "standing", "capture_mode": "manual"}
+    ]
   }
 }
