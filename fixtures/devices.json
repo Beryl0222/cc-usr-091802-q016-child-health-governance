@@ -1,0 +1,19 @@
+{
+  "devices": [
+    {
+      "model": "scale-s2",
+      "calibrated_metrics": ["height", "weight"],
+      "note": "已完成身高体重校准登记的演示体脂秤"
+    },
+    {
+      "model": "scale-s1",
+      "calibrated_metrics": ["weight"],
+      "note": "仅校准体重的演示设备"
+    },
+    {
+      "model": "watch-w2",
+      "calibrated_metrics": [],
+      "note": "演示手表：未针对身高体重测量完成校准，其数据不足以形成结论"
+    }
+  ]
+}

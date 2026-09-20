@@ -1,0 +1,96 @@
+{
+  "rules": [
+    {
+      "rule_id": "bmi-for-age",
+      "version": 1,
+      "metric": "bmi_for_age",
+      "gray": false,
+      "valid_from": "2025-01-01",
+      "valid_to": "2026-12-31",
+      "reference": "示例参考标准 REF-2025（演示数据，非医学建议）",
+      "approvals": [
+        {"role": "medical", "approver": "dr-demo", "approved_at": "2024-12-20T10:00:00+00:00"},
+        {"role": "privacy", "approver": "privacy-demo", "approved_at": "2024-12-21T10:00:00+00:00"},
+        {"role": "copywriting", "approver": "copy-demo", "approved_at": "2024-12-22T10:00:00+00:00"}
+      ],
+      "bands_by_age": {
+        "3-5": [
+          {"category": "below_reference", "max": 13.0},
+          {"category": "within_reference", "min": 13.0, "max": 17.5},
+          {"category": "above_reference", "min": 17.5}
+        ],
+        "6-9": [
+          {"category": "below_reference", "max": 13.5},
+          {"category": "within_reference", "min": 13.5, "max": 18.5},
+          {"category": "above_reference", "min": 18.5}
+        ],
+        "10-12": [
+          {"category": "below_reference", "max": 14.5},
+          {"category": "within_reference", "min": 14.5, "max": 21.0},
+          {"category": "above_reference", "min": 21.0}
+        ],
+        "13-15": [
+          {"category": "below_reference", "max": 15.5},
+          {"category": "within_reference", "min": 15.5, "max": 23.0},
+          {"category": "above_reference", "min": 23.0}
+        ],
+        "16-18": [
+          {"category": "below_reference", "max": 16.5},
+          {"category": "within_reference", "min": 16.5, "max": 24.0},
+          {"category": "above_reference", "min": 24.0}
+        ]
+      },
+      "copy": {
+        "below_reference": "本次测量结果低于参考范围。",
+        "within_reference": "本次测量结果在参考范围内。",
+        "above_reference": "本次测量结果高于参考范围。"
+      }
+    },
+    {
+      "rule_id": "bmi-for-age",
+      "version": 2,
+      "metric": "bmi_for_age",
+      "gray": true,
+      "valid_from": "2026-06-01",
+      "valid_to": "2026-12-31",
+      "reference": "示例参考标准 REF-2026-GRAY（灰度演示数据，非医学建议）",
+      "approvals": [
+        {"role": "medical", "approver": "dr-demo", "approved_at": "2026-05-20T10:00:00+00:00"},
+        {"role": "privacy", "approver": "privacy-demo", "approved_at": "2026-05-21T10:00:00+00:00"},
+        {"role": "copywriting", "approver": "copy-demo", "approved_at": "2026-05-22T10:00:00+00:00"}
+      ],
+      "bands_by_age": {
+        "3-5": [
+          {"category": "below_reference", "max": 13.0},
+          {"category": "within_reference", "min": 13.0, "max": 17.5},
+          {"category": "above_reference", "min": 17.5}
+        ],
+        "6-9": [
+          {"category": "below_reference", "max": 13.5},
+          {"category": "within_reference", "min": 13.5, "max": 18.5},
+          {"category": "above_reference", "min": 18.5}
+        ],
+        "10-12": [
+          {"category": "below_reference", "max": 14.5},
+          {"category": "within_reference", "min": 14.5, "max": 21.0},
+          {"category": "above_reference", "min": 21.0}
+        ],
+        "13-15": [
+          {"category": "below_reference", "max": 15.5},
+          {"category": "within_reference", "min": 15.5, "max": 18.0},
+          {"category": "above_reference", "min": 18.0}
+        ],
+        "16-18": [
+          {"category": "below_reference", "max": 16.5},
+          {"category": "within_reference", "min": 16.5, "max": 24.0},
+          {"category": "above_reference", "min": 24.0}
+        ]
+      },
+      "copy": {
+        "below_reference": "本次测量结果低于参考范围。",
+        "within_reference": "本次测量结果在参考范围内。",
+        "above_reference": "本次测量结果高于参考范围。"
+      }
+    }
+  ]
+}
